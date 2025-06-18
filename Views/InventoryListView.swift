@@ -2,6 +2,7 @@ import SwiftUI
 
 struct InventoryListView: View {
     @StateObject var viewModel = InventoryViewModel()
+    @State private var showingSmartScan = false
     
     var body: some View {
         NavigationView {
@@ -14,6 +15,16 @@ struct InventoryListView: View {
                 }
             }
             .navigationTitle("My Inventory")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: { showingSmartScan = true }) {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingSmartScan) {
+                SmartScanView(viewModel: viewModel)
+            }
         }
     }
 }

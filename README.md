@@ -23,9 +23,9 @@ SwiftStock helps you catalog, track, and resell your physical items with smart i
 
 ## 🚦 Getting Started
 1. Open this folder in Xcode
-2. Add a new SwiftUI iOS project (or let the AI scaffold it for you)
+2. Add a new SwiftUI iOS project (or use the provided files)
 3. Start building your smart inventory!
 
 ---
 
-**Impress recruiters. Declutter your life. Power the resale economy.** 
+**Declutter your life. Power the resale economy.** 
